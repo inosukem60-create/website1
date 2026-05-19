@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BNRG Games — Download Flappy Bird APK</title>
+  <meta name="description" content="Download Flappy Bird APK by BNRG Studios. Safe, fast, and free arcade game.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg">
+    <div class="ambient-orb"></div>
+    <div class="ambient-orb"></div>
+    <div class="ambient-orb"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-brand">
+      <div class="brand-icon">⚡</div>
+      BNRG Games
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        FEATURED DOWNLOAD AVAILABLE
+      </div>
+      <h1>Download My Apps</h1>
+      <p>Get the latest mobile games and tools built by BNRG Studios. Fast, free, and secure APK downloads.</p>
+    </section>
+
+    <!-- Apps Section (Only Flappy Bird) -->
+    <section class="apps-section" id="apps">
+      <div class="section-header" style="justify-content: center;">
+        <h2>Featured App</h2>
+      </div>
+
+      <!-- App Cards Grid -->
+      <div class="apps-grid" style="display: flex; justify-content: center; max-width: 450px; margin: 0 auto;">
+
+        <!-- App 1: Flappy Bird -->
+        <div class="app-card" data-category="games" style="width: 100%;">
+          <div class="app-card-banner" style="background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);">
+            <span style="font-size:4.5rem; opacity:0.5;">🐦</span>
+            <span class="card-badge free">FREE</span>
+          </div>
+          <div class="app-card-body">
+            <div class="app-card-header">
+              <div class="app-icon" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);">🐦</div>
+              <div class="app-card-info">
+                <h3>Flappy Bird</h3>
+                <span class="developer">BNRG Studios</span>
+              </div>
+            </div>
+            <p class="app-card-desc">The legendary arcade game — tap to fly, dodge pipes, and beat your high score!</p>
+            <div class="app-card-meta">
+              <span class="app-size">Size: 574 KB</span>
+              <span class="app-size">Version: 1.0.0</span>
+            </div>
+          </div>
+          <div class="app-card-footer">
+            <a href="apks/flappy-bird.apk.apk" download="flappy-bird.apk" class="btn btn-primary">⬇ Download APK</a>
+            <button class="btn btn-secondary" data-app="flappy-bird">ℹ Details</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-card">
+        <h2>About BNRG Studios</h2>
+        <p>We build fun, free, and lightweight mobile apps. All our APKs are safe, ad-minimal, and designed to bring
+          joy. Download, install, and enjoy!</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <span class="about-feature-icon">🔒</span>
+            <h4>Safe & Secure</h4>
+            <p>Tested and guaranteed virus-free APK file</p>
+          </div>
+          <div class="about-feature">
+            <span class="about-feature-icon">⚡</span>
+            <h4>Lightweight</h4>
+            <p>Under 1MB for fast, easy installation</p>
+          </div>
+          <div class="about-feature">
+            <span class="about-feature-icon">🎁</span>
+            <h4>100% Free</h4>
+            <p>No ads, no payments, just simple fun</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- App Detail Modal (Simplified & No Ratings) -->
+  <div class="modal-overlay" id="appModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-banner" id="modalBanner"></div>
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <p class="modal-dev" id="modalDev"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-stats" style="justify-content: space-around;">
+          <div class="modal-stat">
+            <div class="modal-stat-val" id="modalDownloads"></div>
+            <div class="modal-stat-label">Downloads</div>
+          </div>
+          <div class="modal-stat">
+            <div class="modal-stat-val" id="modalSize"></div>
+            <div class="modal-stat-label">Size</div>
+          </div>
+        </div>
+        <div class="modal-actions" id="modalActions"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact</a>
+    </div>
+    <p>© 2026 BNRG Studios. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
